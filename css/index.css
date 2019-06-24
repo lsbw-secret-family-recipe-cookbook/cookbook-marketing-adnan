@@ -146,24 +146,35 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-section {
+.detail-section {
   border: 2px solid orangered;
 }
-section h2 {
+.detail-section h2 {
   text-align: center;
 }
-section img {
+.detail-section img {
   max-width: 30%;
   height: auto;
   padding: 25px 0;
 }
-section .info-pic {
+.detail-section .info-pic {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
 }
-section .info-pic ul {
+.detail-section .info-pic ul {
   padding-top: 25%;
   font-size: 2rem;
   list-style-type: square;
+}
+.example-section {
+  margin-top: 20px;
+  border: 1px solid green;
+  text-align: center;
+}
+.example-section .customer {
+  padding: 10px 0;
+}
+.example-section .customer p {
+  font-style: italic;
 }
