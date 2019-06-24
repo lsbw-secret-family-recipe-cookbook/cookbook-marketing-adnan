@@ -141,8 +141,29 @@ h3 {
 p {
   font-size: 1.6rem;
 }
-.container {
+body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+section {
+  border: 2px solid orangered;
+}
+section h2 {
+  text-align: center;
+}
+section img {
+  max-width: 30%;
+  height: auto;
+  padding: 25px 0;
+}
+section .info-pic {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+section .info-pic ul {
+  padding-top: 25%;
+  font-size: 2rem;
+  list-style-type: square;
 }
