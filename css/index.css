@@ -152,6 +152,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.intro {
+  text-align: center;
+}
 .detail-section {
   border: 2px solid orangered;
 }
