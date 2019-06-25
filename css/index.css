@@ -152,8 +152,19 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+  }
+}
 .intro {
   text-align: center;
+}
+@media (max-width:500px) {
+  .intro h2 {
+    padding: 1.2rem 0;
+    font-size: 2.3rem;
+  }
 }
 .detail-section {
   border: 2px solid orangered;
@@ -166,15 +177,32 @@ header {
   height: auto;
   padding: 25px 0;
 }
+@media (max-width:500px) {
+  .detail-section img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
 .detail-section .info-pic {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
 }
+@media (max-width:500px) {
+  .detail-section .info-pic {
+    flex-direction: column;
+  }
+}
 .detail-section .info-pic ul {
-  padding-top: 25%;
-  font-size: 2rem;
+  padding-top: 5px;
+  padding-left: 30px;
+  font-size: 1.8rem;
   list-style-type: square;
+}
+@media (max-width:500px) {
+  .detail-section .info-pic ul {
+    padding-left: 92px;
+  }
 }
 .example-section {
   margin-top: 20px;
@@ -194,6 +222,17 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:500px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .contact {
+    order: 2;
+  }
+  footer nav {
+    order: 3;
+  }
+}
 .team {
   margin: 30px 0;
   display: flex;
@@ -202,11 +241,21 @@ footer {
   max-width: 20%;
   padding: 0 25px;
 }
+@media (max-width:500px) {
+  .team img {
+    max-width: 35%;
+  }
+}
 .team h2 {
   text-align: center;
 }
 .team p {
   margin: 25px 0;
+}
+@media (max-width:500px) {
+  .team p {
+    margin: 25px 25px;
+  }
 }
 .alternate {
   flex-direction: row-reverse;

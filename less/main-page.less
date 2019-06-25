@@ -1,14 +1,28 @@
 //Main Page formatting for each sections
 
+//Mobile formatting variable
+@phone: ~"(max-width:500px)";
+
 header{
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @phone{
+        flex-direction: column;
+    }
 }
 
 .intro{
     text-align: center;
+    
+    @media @phone{
+        h2{
+        padding: 1.2rem 0;
+        font-size: 2.3rem;
+        }
+    }
 }
 
 .detail-section{
@@ -21,16 +35,28 @@ header{
         max-width: 30%;
         height: auto;
         padding: 25px 0;
+        @media @phone{
+            max-width: 70%;
+            margin: 0 auto;
+        }
     }
     .info-pic{
         display: flex;
         justify-content: space-evenly;
         align-content: center;
 
+    @media @phone{
+        flex-direction: column;
+        
+    }
         ul{
-            padding-top: 25%;
-            font-size: 2rem;
+            padding-top: 5px;
+            padding-left: 30px;
+            font-size: 1.8rem;
             list-style-type: square;
+            @media @phone{
+                padding-left: 92px;
+            }
         }
     }
 }
@@ -53,6 +79,15 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media @phone{
+        flex-direction: column;
+        .contact{
+            order:2;
+        }
+        nav{
+            order:3;
+        }
+    }
 }
 
 //Styles for About-Us Page
@@ -63,12 +98,18 @@ footer{
     img{
         max-width: 20%;
         padding: 0 25px;
+        @media @phone{
+            max-width: 35%;
+        }
     }
     h2{
         text-align: center;
     }
     p{
         margin: 25px 0;
+        @media @phone{
+            margin:25px 25px;
+        }
     }
 }
 .alternate{
