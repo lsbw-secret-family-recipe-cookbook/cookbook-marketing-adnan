@@ -146,6 +146,12 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .detail-section {
   border: 2px solid orangered;
 }
