@@ -10,19 +10,33 @@
   html, body {
     font-family: 'Lora', serif;
     font-style: italic;
+
+    //Animation when page loads up
+    animation-name: fadein;
+    animation-duration: 2s;
+  
+    @keyframes fadein {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
     
   }
   
-  h1, h2, h3, h4, h5 {
-    //font-family: 'Russo One', sans-serif;
+  h1{
+    font-size: 5rem;
+    font-family: 'Vollkorn SC', serif;
+    font-weight: bold;
+    font-style: initial;
   }
   
+
+
   h2 {
     font-size: 3.2rem;
   }
   
   h3 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   
   p {
@@ -35,5 +49,5 @@
     width: 100%;
     margin: 0 auto;  
   }
-  
+
   
