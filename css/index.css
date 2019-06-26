@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Lora', serif;
   font-style: italic;
+  color: #888787;
   animation-name: fadein;
   animation-duration: 2s;
 }
@@ -152,6 +153,7 @@ h1 {
   font-family: 'Vollkorn SC', serif;
   font-weight: bold;
   font-style: initial;
+  color: black;
 }
 h2 {
   font-size: 3.2rem;
@@ -174,6 +176,9 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #f5bbbb;
+}
+header img {
+  padding-left: 5px;
 }
 header nav a {
   font-size: 1.5rem;
@@ -234,8 +239,6 @@ header nav a {
   width: 100%;
   margin: 45px auto;
   display: flex;
-  border: 1px solid red;
-  box-shadow: 1px 1px 5px red;
   border-radius: 10px;
   overflow: hidden;
   flex-wrap: wrap;
@@ -281,11 +284,35 @@ header nav a {
 .tabs .tabs-link-selected {
   z-index: 2;
   border-right: 1px solid red;
-  background-color: white;
+  background-color: #f0d1d1;
   color: black;
 }
 .tabs .tabs-link-selected:hover {
+  background-color: #f0d1d1;
+}
+.btn {
+  background-color: #966767;
+  /* Green */
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Vollkorn SC', serif;
+  font-weight: bold;
+  font-style: initial;
+  font-size: 5rem;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.btn:hover {
   background-color: white;
+  color: darkgray;
+  border: 2px solid #555555;
 }
 .example-section {
   margin-top: 20px;

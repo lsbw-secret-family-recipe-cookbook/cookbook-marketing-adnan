@@ -17,6 +17,9 @@ header{
     align-items: center;
     background-color: rgb(245, 187, 187);
 
+    img{
+        padding-left: 5px;
+    }
     nav a{
         font-size:1.5rem;
         padding-right: 10px;
@@ -83,8 +86,6 @@ header{
     width: 100%;
     margin: 45px auto;
     display: flex;
-    border: 1px solid red;
-    box-shadow: 1px 1px 5px red;
     border-radius: 10px;
     overflow: hidden;
     flex-wrap: wrap;
@@ -133,14 +134,37 @@ header{
     .tabs-link-selected {
       z-index: 2;
       border-right: 1px solid red;
-      background-color: white;
+      background-color: rgb(240, 209, 209);
       color: black;
       &:hover {
-        background-color: white;
+        background-color: rgb(240, 209, 209);
       }
     }
-  }
-  
+}
+
+.btn{
+    background-color: rgb(150, 103, 103); /* Green */
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Vollkorn SC', serif;
+    font-weight: bold;
+    font-style: initial; 
+    font-size: 5rem;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color:white;
+    color:darkgray;
+    border:2px solid #555555;
+}
 
 .example-section{
     margin-top:20px;
