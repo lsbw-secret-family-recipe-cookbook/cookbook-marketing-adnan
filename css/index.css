@@ -175,19 +175,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5bbbb;
+  border-radius: 12px;
+  background-color: #966767;
 }
 header img {
   padding-left: 5px;
-}
-header nav a {
-  font-size: 1.5rem;
-  padding-right: 10px;
+  padding-bottom: 10px;
 }
 @media (max-width:500px) {
   header {
     flex-direction: column;
   }
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  padding-right: 10px;
+  transition-duration: 0.4s;
+}
+nav a:hover {
+  color: black;
 }
 .intro {
   margin-top: 80px;
@@ -268,12 +276,12 @@ header nav a {
 .tabs .tabs-links {
   display: flex;
   justify-content: space-between;
-  background-color: red;
+  background-color: #966767;
 }
 .tabs .tabs-link {
   padding: 20px 89px;
   font-size: 1.8rem;
-  background-color: red;
+  background-color: #966767;
   border-right: 1px solid white;
   color: white;
   cursor: pointer;
@@ -283,7 +291,7 @@ header nav a {
 }
 .tabs .tabs-link-selected {
   z-index: 2;
-  border-right: 1px solid red;
+  border-right: 1px solid #966767;
   background-color: #f0d1d1;
   color: black;
 }
@@ -292,7 +300,6 @@ header nav a {
 }
 .btn {
   background-color: #966767;
-  /* Green */
   border: none;
   width: 100%;
   color: white;
@@ -304,7 +311,6 @@ header nav a {
   font-weight: bold;
   font-style: initial;
   font-size: 5rem;
-  margin: 4px 2px;
   border-radius: 12px;
   cursor: pointer;
   transition-duration: 0.4s;
@@ -312,10 +318,10 @@ header nav a {
 .btn:hover {
   background-color: white;
   color: darkgray;
-  border: 2px solid #555555;
+  border: 1px solid #555555;
 }
 .example-section {
-  margin-top: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 .example-section .customer {
@@ -330,11 +336,25 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
+  background-color: #966767;
+  border-radius: 12px;
+}
+footer .contact {
+  padding-left: 10px;
+  color: white;
 }
 footer .team-link {
   font-family: 'Vollkorn SC', serif;
   font-weight: bold;
   font-style: initial;
+}
+footer .team-link a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.4s;
+}
+footer .team-link a:hover {
+  color: black;
 }
 @media (max-width:500px) {
   footer {
@@ -347,6 +367,9 @@ footer .team-link {
     order: 3;
   }
 }
+.about-us-header h1 {
+  padding: 20px 0;
+}
 .team {
   margin: 30px 0;
   display: flex;
@@ -357,20 +380,26 @@ footer .team-link {
 }
 @media (max-width:500px) {
   .team img {
-    max-width: 35%;
+    max-width: 40%;
   }
 }
-.team h2 {
-  text-align: center;
+.team h2,
+.team h3 {
+  padding-left: 25px;
 }
 .team p {
-  margin: 25px 0;
+  margin: 25px 25px;
 }
-@media (max-width:500px) {
-  .team p {
-    margin: 25px 25px;
-  }
+header h1 {
+  font-size: 2.6rem;
 }
 .alternate {
   flex-direction: row-reverse;
+}
+.about-us-footer .contact {
+  font-size: 2.6rem;
+  padding: 10px 5px;
+}
+.about-us-footer nav {
+  padding-bottom: 10px;
 }
