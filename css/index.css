@@ -249,7 +249,6 @@ nav a:hover {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
-  flex-wrap: wrap;
 }
 .tabs {
   width: 100%;
@@ -288,6 +287,11 @@ nav a:hover {
 }
 .tabs .tabs-link:hover {
   background-color: lightcoral;
+}
+@media (max-width:500px) {
+  .tabs .tabs-link {
+    padding: 20px 20px;
+  }
 }
 .tabs .tabs-link-selected {
   z-index: 2;
@@ -347,6 +351,8 @@ footer .team-link {
   font-family: 'Vollkorn SC', serif;
   font-weight: bold;
   font-style: initial;
+  text-align: center;
+  padding: 10px 0px;
 }
 footer .team-link a {
   text-decoration: none;
@@ -361,9 +367,12 @@ footer .team-link a:hover {
     flex-direction: column;
   }
   footer .contact {
+    font-size: 2rem;
     order: 2;
+    padding-bottom: 20px;
   }
   footer nav {
+    padding-bottom: 20px;
     order: 3;
   }
 }
