@@ -402,6 +402,7 @@ footer .team-link a:hover {
 .about-us-header img {
   width: 13%;
   padding-left: 15px;
+  cursor: pointer;
 }
 @media (max-width:500px) {
   .about-us-header img {
