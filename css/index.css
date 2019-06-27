@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: black;
 }
 html,
 body {
@@ -413,13 +414,14 @@ footer .team-link a:hover {
   align-items: center;
 }
 .team img {
+  border-radius: 25%;
   max-width: 20%;
   padding: 0 25px;
 }
 @media (max-width:500px) {
   .team img {
     max-width: 60%;
-    height: 250px;
+    height: 210px;
   }
 }
 .team h2,
@@ -433,8 +435,8 @@ footer .team-link a:hover {
 .team a {
   text-decoration: none;
   font-style: initial;
-  color: black;
-  border-bottom: 1px dashed black;
+  color: white;
+  border-bottom: 1px dashed white;
 }
 header h1 {
   text-align: center;
