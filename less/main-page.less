@@ -10,7 +10,7 @@ header{
     // position: fixed;
     // z-index: 3;
 
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -18,11 +18,13 @@ header{
     border-radius: 12px;
     background-color: rgb(150, 103, 103);
 
-    img{
-        padding-left: 5px;
-        width: 10%;
+    p{
+        font-family: 'Vollkorn SC', serif;
+        font-weight: bold;
+        font-style: initial;
+        color: white;
+        padding-left: 15px;
     }
-
 
 
     @media @phone{
@@ -53,6 +55,9 @@ nav a:hover{
         padding: 1.2rem 0;
         font-size: 2.3rem;
         }
+    }
+    #app-name{
+        font-size: 3.8rem;
     }
 }
 
@@ -243,18 +248,32 @@ footer{
 
 .about-us-header{
     h1{
-        padding: 20px 0;
+        
+        font-size: 3.2rem;
+        @media @phone{
+            padding: 20px 0;
+        }
     }
+    img{
+        width: 15%;
+        padding-left:15px;
+        @media @phone{
+            width: 35%;
+        }
+    }
+    
 }
 
 .team{
     margin: 30px 0;
     display: flex;
+    align-items: center;
     img{
         max-width: 20%;
         padding: 0 25px;
         @media @phone{
-            max-width: 40%;
+            max-width: 60%;
+            height: 250px;
         }
     }
     h2,h3{
@@ -263,7 +282,6 @@ footer{
 
     p{
         margin: 25px 25px;
-        text-align: justify;
         font-style: initial;
     }
     a{
@@ -274,13 +292,16 @@ footer{
     }
 }
 header h1{
+    text-align: center;
     font-size: 2.6rem;
+    color: white;
 }
 .alternate{
     flex-direction: row-reverse;
 }
 .about-us-footer{
     .contact{
+        font-style: initial;
         font-size: 2.6rem;
         padding: 10px 5px;
     }
