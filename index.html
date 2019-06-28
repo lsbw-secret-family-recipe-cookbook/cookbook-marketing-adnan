@@ -1,0 +1,190 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Family Cookbook</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC:400,600&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/img/secret-cookbook-logo.png" />
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- Linking JavaScript functionality for Tab component -->
+<script defer="defer" src="./components/Tabs.js"></script>
+
+    <header>
+        <p>Secret Cookbook<br>A Full-Stack Web Application<br>Made by Students from<br>Lambda School</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="https://lambdaschool-cookbook.netlify.com/">Register/Sign-in</a>
+        </nav>
+    </header>
+
+    <section class='intro'>
+        <h3>Do you have a family recipe that you want to save?<br><br></h3>
+        <h3>Meet our app</h3><br><br>
+        <h3 id="app-name">Secret Cookbook</h3><br><br>
+
+       <img src="img/secret-cookbook-logo.png" alt="logo">
+       <br><br><br><br>
+       <h3>With our app at your disposal, you can collect, create and customize all your family recipes<br><br>Explore our app</h3>
+        
+    </section>
+
+<!-- Below code was made as tester before being inserted in tab component -->
+    <!-- <section class='detail-section'>
+        <h2>App Features "Section"</h2>
+
+        <div class='info-pic'>
+            <img src="img/tastypie.jpg" alt="Photo by Gemma Evans on Unsplash">
+            <div>
+                <ul>
+                    <li>Store your Family Recipes</li>
+                    <li>Search through your recipe collection</li>
+                    <li>Track your changes to your recipes</li>
+                    <li>Share your recipes</li>
+                </ul>
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- Adding Tab component to showcase app features -->
+    <div class="section">
+        <div class="tabs">
+            <div class="tabs-links">
+                <div class="tabs-link tabs-link-selected" data-tab="1">Create</div>
+                <div class="tabs-link" data-tab="2">Collect</div>
+                <div class="tabs-link" data-tab="3">Customize</div>
+                <div class="tabs-link" data-tab="4">Share</div>
+            </div>
+            <div class="tabs-items">
+                <div class="tabs-item tabs-item-selected" data-tab="1">
+                    <section class='detail-section'>
+                        <h2>Create and Store your Recipes</h2>
+                
+                        <div class='info-pic'>
+                            <img src="img/tastypie.jpg" alt="Photo by Gemma Evans on Unsplash">
+                            <div class="feature-info">
+                                <ul>
+                                    <li>Store your Family Recipes</li>
+                                    <li>Search through your recipe collection</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </section>
+                </div>
+                <div class="tabs-item" data-tab="2">
+                    <section class='detail-section'>
+                        <h2>Categorize your collections</h2>
+                
+                        <div class='info-pic'>
+                            <img src="img/tastypie.jpg" alt="Photo by Gemma Evans on Unsplash">
+                            <div class="feature-info">
+                                <ul>
+                                    <li>Create an awesome collection by different categories</li>
+                                    <li>Search through your recipe collections</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="tabs-item" data-tab="3">
+                    <section class='detail-section'>
+                        <h2>Improve your recipes with ease</h2>
+                
+                        <div class='info-pic'>
+                            <img src="img/tastypie.jpg" alt="Photo by Gemma Evans on Unsplash">
+                            <div class="feature-info">
+                                <ul>
+                                    <li>Make a variant of your existing recipes</li>
+                                    <li>Track your changes to your recipes</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </section>
+                </div>
+                <div class="tabs-item" data-tab="4">
+                    <section class='detail-section'>
+                        <h2>Share your Recipes</h2>
+                
+                        <div class='info-pic'>
+                            <img src="img/tastypie.jpg" alt="Photo by Gemma Evans on Unsplash">
+                            <div class="feature-info">
+                                <ul>
+                                    <li>Share your recipes with read-only link</li>
+                                    <li>Make your recipes available to other Secret Cookbook users</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </section>
+                </div>
+                <div class="tabs-item" data-tab="5">
+                    <section class='detail-section'>
+                        <h2>App Features "Section"</h2>
+                
+                        <div class='info-pic'>
+                            <img src="img/tastypie.jpg" alt="Photo by Gemma Evans on Unsplash">
+                            <div class="feature-info">
+                                <ul>
+                                    <li>Store your Family Recipes</li>
+                                    <li>Search through your recipe collection</li>
+                                    <li>Track your changes to your recipes</li>
+                                    <li>Share your recipes</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <button class="btn" onclick="window.location.href = 'https://lambdaschool-cookbook.netlify.com/';">SIGN UP NOW</button>
+    <section class='example-section'>
+        <h2>Customer Comments</h2>
+        <div class="customer">
+            <p>"This app has helped me tremendously to keep my <br>
+                organized and safely backup on the cloud" - Zach</p>
+        </div>
+        <div class="customer">
+            <p>"The ability to add a picture of the dish and <br>
+                having simple recipe card along with it, this is a blessing!" - Luis
+            </p>
+        </div>
+        <div class="customer">
+            <p>"I can modify my recipes with ease and create variants<br>
+                Also, keeping the original intact" - Jade</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class='contact'>123 Somewhere Street <br>Sometown,SomeState<br>USA 99999</div>
+        <div class="team-link"><a href="about-us.html">Meet the Team behind<br> Secret Cookbook Development</a></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="https://lambdaschool-cookbook.netlify.com/">Register/Sign-in</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
