@@ -438,6 +438,11 @@ footer .team-link a:hover {
     height: 180px;
   }
 }
+@media (max-width:500px) and (max-width:500px) {
+  .team {
+    flex-direction: column;
+  }
+}
 .team h2,
 .team h3 {
   padding-left: 25px;
@@ -459,6 +464,11 @@ header h1 {
 }
 .alternate {
   flex-direction: row-reverse;
+}
+@media (max-width:500px) {
+  .alternate {
+    flex-direction: column;
+  }
 }
 .about-us-footer .contact {
   font-style: initial;
