@@ -449,8 +449,8 @@ footer .team-link a:hover {
 .team a {
   text-decoration: none;
   font-style: initial;
-  color: white;
-  border-bottom: 1px dashed white;
+  color: black;
+  border-bottom: 1px dashed black;
 }
 header h1 {
   text-align: center;
