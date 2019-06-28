@@ -131,7 +131,6 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: black;
 }
 html,
 body {
@@ -177,7 +176,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-radius: 12px;
-  background-color: #966767;
+  background-color: #aa3e13;
 }
 header p {
   font-family: 'Vollkorn SC', serif;
@@ -185,6 +184,12 @@ header p {
   font-style: initial;
   color: white;
   padding-left: 15px;
+}
+@media (max-width:500px) {
+  header p {
+    font-size: 2.1rem;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width:500px) {
   header {
@@ -288,18 +293,20 @@ nav a:hover {
 .tabs .tabs-links {
   display: flex;
   justify-content: space-between;
-  background-color: #966767;
+  background-color: #aa3e13;
 }
 .tabs .tabs-link {
   padding: 20px 94px;
   font-size: 1.8rem;
-  background-color: #966767;
+  background-color: #fd9a6c;
   border-right: 1px solid white;
   color: white;
   cursor: pointer;
+  transition-duration: 0.4s;
 }
 .tabs .tabs-link:hover {
-  background-color: lightcoral;
+  background-color: #aa3e13;
+  border-right: 1px solid #fd9a6c;
 }
 @media (max-width:500px) {
   .tabs .tabs-link {
@@ -308,15 +315,16 @@ nav a:hover {
 }
 .tabs .tabs-link-selected {
   z-index: 2;
-  border-right: 1px solid #966767;
-  background-color: #f0d1d1;
-  color: black;
+  background-color: #aa3e13;
+  color: #ffffff;
+  transition-duration: 0.4s;
 }
 .tabs .tabs-link-selected:hover {
-  background-color: #f0d1d1;
+  border-right: 1px solid #fd9a6c;
+  background-color: #fd9a6c;
 }
 .btn {
-  background-color: #966767;
+  background-color: #fd9a6c;
   border: none;
   width: 100%;
   color: white;
@@ -333,8 +341,8 @@ nav a:hover {
   transition-duration: 0.4s;
 }
 .btn:hover {
-  background-color: white;
-  color: darkgray;
+  background-color: #aa3e13;
+  color: white;
   border: 1px solid #555555;
 }
 .example-section {
@@ -353,7 +361,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
-  background-color: #966767;
+  background-color: #aa3e13;
   border-radius: 12px;
 }
 footer .contact {
